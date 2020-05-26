@@ -1,9 +1,10 @@
 ﻿using System;
+using fox.My_code.browser.basics;
 using Gecko;
 
 namespace fox.My_code.browser
 {
-    public class Firefox_Base: GeckoWebBrowser
+    public abstract class Firefox_Base: GeckoWebBrowser, Client_Interface
     {
         public Firefox_Base()
         {
@@ -16,7 +17,10 @@ namespace fox.My_code.browser
             Size = new System.Drawing.Size(size_X,size_Y);
             TabIndex = 0;
             UseHttpActivityObserver = false;
+
             //Click += new System.EventHandler(this.geckoWebBrowser1_Click);
         }
+
+        public abstract int doSth();
     }
 }

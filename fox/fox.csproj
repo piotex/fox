@@ -60,12 +60,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="My_code\browser\basics\Client_Interface.cs" />
+    <Compile Include="My_code\browser\basics\Client_Type.cs" />
+    <Compile Include="My_code\browser\Client_Manager.cs" />
     <Compile Include="My_code\browser\Firefox_Base.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="My_code\db\FoxUser.cs" />
     <Compile Include="My_code\db\FoxUsers.cs" />
     <Compile Include="My_code\db\FoxXmlData.cs" />
+    <Compile Include="My_code\ySense\ySense_client.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

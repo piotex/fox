@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using fox.My_code.browser;
+using fox.My_code.browser.basics;
 using fox.My_code.db;
 using Gecko;
+using Gecko.WebIDL;
 
 namespace fox
 {
@@ -16,12 +18,8 @@ namespace fox
         private void Form1_Load(object sender, EventArgs e)
         {
             Xpcom.Initialize("Firefox");
-
-            string link = @"https://github.com/piotex/fox";
-            Firefox_Base fox = new Firefox_Base();
-            Controls.Add(fox);
-            fox.Navigate(link);
-
+            Client_Manager manager = new Client_Manager(this);
+            manager.StartClient(Client_Type.ySense);
         }
 
         private void button1_Click(object sender, EventArgs e)

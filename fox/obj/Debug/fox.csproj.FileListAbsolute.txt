@@ -12,4 +12,3 @@ C:\Users\pkubo\OneDrive\Desktop\fox\fox\obj\Debug\fox.csproj.CopyComplete
 C:\Users\pkubo\OneDrive\Desktop\fox\fox\obj\Debug\fox.exe
 C:\Users\pkubo\OneDrive\Desktop\fox\fox\obj\Debug\fox.pdb
 C:\Users\pkubo\OneDrive\Desktop\fox\fox\obj\Debug\fox.Form1.resources
-C:\Users\pkubo\OneDrive\Desktop\fox\fox\obj\Debug\fox.csprojAssemblyReference.cache
