@@ -20,7 +20,9 @@ namespace fox
         {
             Xpcom.Initialize("Firefox");
             Client_Manager manager = new Client_Manager(this);
-            manager.LogIn_Client(Client_Type.ySense);
+            manager.NavigatoToMain_Client(Client_Type.ySense);
+
+            //manager.LogIn_Client(Client_Type.ySense);
         }
 
         private void button1_Click(object sender, EventArgs e)

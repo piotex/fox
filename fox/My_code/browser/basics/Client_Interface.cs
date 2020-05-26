@@ -10,6 +10,7 @@ namespace fox.My_code.browser.basics
     {
         int doSth();
         int LogIn();
+        int Navigate_toMain();
     }
 }
 

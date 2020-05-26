@@ -38,5 +38,10 @@ namespace fox.My_code.browser.Factory
             clients[_type].LogIn();
             return 1;
         }
+        public int NavigatoToMain_Client(Client_Type _type)
+        {
+            clients[_type].Navigate_toMain();
+            return 1;
+        }
     }
 }

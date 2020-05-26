@@ -23,5 +23,6 @@ namespace fox.My_code.browser.basics.classes
 
         public abstract int doSth();
         public abstract int LogIn();
+        public abstract int Navigate_toMain();
     }
 }

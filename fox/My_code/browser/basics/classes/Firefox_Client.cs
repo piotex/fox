@@ -22,15 +22,20 @@ namespace fox.My_code.browser.basics.classes
         {
             ready = true;
         }
-
-        protected int Navigate_Client(string path)
+        protected int IsCompleted()
         {
-            Navigate(path);
             while (!ready)
             {
                 System.Windows.Forms.Application.DoEvents();
             }
             ready = false;
+            return 1;
+        }
+
+        protected int Navigate_Client(string path)
+        {
+            Navigate(path);
+            IsCompleted();
             return 1;
         }
     }
