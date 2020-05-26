@@ -2,7 +2,7 @@
 using fox.My_code.browser.basics;
 using Gecko;
 
-namespace fox.My_code.browser
+namespace fox.My_code.browser.basics.classes
 {
     public abstract class Firefox_Base: GeckoWebBrowser, Client_Interface
     {
@@ -22,5 +22,6 @@ namespace fox.My_code.browser
         }
 
         public abstract int doSth();
+        public abstract int LogIn();
     }
 }

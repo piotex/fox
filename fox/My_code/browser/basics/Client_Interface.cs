@@ -9,5 +9,7 @@ namespace fox.My_code.browser.basics
     public interface Client_Interface
     {
         int doSth();
+        int LogIn();
     }
 }
+

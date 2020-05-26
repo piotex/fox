@@ -60,10 +60,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="My_code\browser\basics\classes\Firefox_Client.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="My_code\browser\basics\Client_Interface.cs" />
     <Compile Include="My_code\browser\basics\Client_Type.cs" />
-    <Compile Include="My_code\browser\Client_Manager.cs" />
-    <Compile Include="My_code\browser\Firefox_Base.cs">
+    <Compile Include="My_code\browser\Factory\Client_Manager.cs" />
+    <Compile Include="My_code\browser\basics\classes\Firefox_Base.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="My_code\db\FoxUser.cs" />

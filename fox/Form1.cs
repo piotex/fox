@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using fox.My_code.browser;
 using fox.My_code.browser.basics;
+using fox.My_code.browser.Factory;
 using fox.My_code.db;
 using Gecko;
 using Gecko.WebIDL;
@@ -19,7 +20,7 @@ namespace fox
         {
             Xpcom.Initialize("Firefox");
             Client_Manager manager = new Client_Manager(this);
-            manager.StartClient(Client_Type.ySense);
+            manager.LogIn_Client(Client_Type.ySense);
         }
 
         private void button1_Click(object sender, EventArgs e)

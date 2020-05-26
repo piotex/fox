@@ -1,4 +1,5 @@
 ﻿using fox.My_code.browser.basics;
+using fox.My_code.browser.basics.classes;
 using fox.My_code.ySense;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace fox.My_code.browser
+namespace fox.My_code.browser.Factory
 {
     public class Client_Manager
     {
@@ -27,9 +28,14 @@ namespace fox.My_code.browser
             {Client_Type.ySense, new ySense_client() }
         };
 
-        public int StartClient(Client_Type _type)
+        public int Start_Client(Client_Type _type)
         {
             clients[_type].doSth();
+            return 1;
+        }
+        public int LogIn_Client(Client_Type _type)
+        {
+            clients[_type].LogIn();
             return 1;
         }
     }
