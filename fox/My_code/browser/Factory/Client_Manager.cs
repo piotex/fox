@@ -28,7 +28,7 @@ namespace fox.My_code.browser.Factory
             {Client_Type.ySense, new ySense_client() }
         };
 
-        public int Start_Client(Client_Type _type)
+        public int doSth(Client_Type _type)
         {
             clients[_type].doSth();
             return 1;

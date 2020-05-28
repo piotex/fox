@@ -15,11 +15,11 @@ namespace fox
         {
             InitializeComponent();
         }
-
+        Client_Manager manager;
         private void Form1_Load(object sender, EventArgs e)
         {
             Xpcom.Initialize("Firefox");
-            Client_Manager manager = new Client_Manager(this);
+            manager = new Client_Manager(this);
             manager.NavigatoToMain_Client(Client_Type.ySense);
 
             //manager.LogIn_Client(Client_Type.ySense);
@@ -29,7 +29,7 @@ namespace fox
         {
             FoxXmlData db = new FoxXmlData();
             db.Read();
-
+            manager.NavigatoToMain_Client(Client_Type.ySense);
         }
     }
 }
